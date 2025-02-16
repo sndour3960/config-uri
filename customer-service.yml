@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: ${PASSWORD:Uasz123}
+    url: jdbc:postgresql://${HOST:localhost}:${PORT:5432}/${DB_NAME:customer-db}
+    username: ${USER_NAME:pgi_user}
+  jpa:
+    open-in-view: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
