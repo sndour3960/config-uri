@@ -1,5 +1,4 @@
-spring:
-  datasource:
+datasource:
     driver-class-name: org.postgresql.Driver
     password: ${PASSWORD:Uasz123}
     url: jdbc:postgresql://${HOST:localhost}:${PORT:5432}/${DB_NAME:customer-db}
